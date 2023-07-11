@@ -5,16 +5,15 @@ name: Python application
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ python-ci-workflow ]
   pull_request:
-    branches: [ "main" ]
+    branches: [ python-ci-workflow ]
 
 permissions:
   contents: read
 
 jobs:
   build:
-
     runs-on: ubuntu-latest # 코드를 가져와서 build를 해라. 보여주는건 ubuntu에
 
     steps:
